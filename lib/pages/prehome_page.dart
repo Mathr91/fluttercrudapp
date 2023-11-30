@@ -8,15 +8,16 @@ class PreHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Página de Inicio'),
+        title: Text('Inicio'),
       ),
+      backgroundColor: Colors.green[700],
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.greenAccent[400],
               ),
               child: Text(
                 'Menú de Navegación',
@@ -27,11 +28,14 @@ class PreHomePage extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.note_add),
+              leading: Icon(
+                Icons.edit,
+                color: Colors.green[700],
+              ),
               title: Text(
                 'Crear Notas',
                 style: TextStyle(
-                  color: Colors.blue,
+                  color: Colors.green[700],
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -50,20 +54,21 @@ class PreHomePage extends StatelessWidget {
         child: Column(
           children: [
             Image.network(
-              'https://i.pinimg.com/originals/b5/da/8e/b5da8e9670122bfa5a18f20de59f0456.jpg',
-              width: 100,
-              height: 100,
+              'https://static.vecteezy.com/system/resources/previews/011/288/616/original/a-light-green-paper-note-attached-to-a-map-pin-suitable-for-writing-study-notes-at-home-or-at-work-free-png.png',
+              width: 150,
+              height: 150,
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.grey[200],
+                color: Colors.green[50],
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: EdgeInsets.all(16),
               child: Text(
-                'Creadores de esta app:\nRodoni Matias\nMartín Rojas',
+                'Aplicacion para crear notas',
                 style: TextStyle(
                   fontSize: 24,
+                  color: Colors.green[700],
                 ),
                 textAlign: TextAlign.center,
               ),

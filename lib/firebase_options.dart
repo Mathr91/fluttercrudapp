@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB8RLLxQkbpQ2qJY_9091iLl-hC-XZqNi8',
-    appId: '1:644962621106:web:100becede7d694fd255bab',
-    messagingSenderId: '644962621106',
-    projectId: 'users-4a5f7',
-    authDomain: 'users-4a5f7.firebaseapp.com',
-    storageBucket: 'users-4a5f7.appspot.com',
+    apiKey: 'AIzaSyABuEVrwPbKRESMUsINBBOGuEHZzrjBR-0',
+    appId: '1:840885865156:web:b68f3cf30546cda3965791',
+    messagingSenderId: '840885865156',
+    projectId: 'notas-86899',
+    authDomain: 'notas-86899.firebaseapp.com',
+    storageBucket: 'notas-86899.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC58VbR9eqH6P3CW5poHuNKCvRvjXG02qo',
-    appId: '1:644962621106:android:97883bccfe71e317255bab',
-    messagingSenderId: '644962621106',
-    projectId: 'users-4a5f7',
-    storageBucket: 'users-4a5f7.appspot.com',
+    apiKey: 'AIzaSyDoD1-kfmO2sfWe4h8PkC1_-POi_9lK9C8',
+    appId: '1:840885865156:android:040638c83a20e886965791',
+    messagingSenderId: '840885865156',
+    projectId: 'notas-86899',
+    storageBucket: 'notas-86899.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAuyUZD679ppMAZOeJoA2NyNUZ5eigPSK0',
-    appId: '1:644962621106:ios:7b5349a817c02000255bab',
-    messagingSenderId: '644962621106',
-    projectId: 'users-4a5f7',
-    storageBucket: 'users-4a5f7.appspot.com',
+    apiKey: 'AIzaSyCQleD3qJgqwCFWDBb0U5dJPGB3WIR1uzw',
+    appId: '1:840885865156:ios:b5ed5d309b44429b965791',
+    messagingSenderId: '840885865156',
+    projectId: 'notas-86899',
+    storageBucket: 'notas-86899.appspot.com',
     iosBundleId: 'com.example.crud',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAuyUZD679ppMAZOeJoA2NyNUZ5eigPSK0',
-    appId: '1:644962621106:ios:c042782aa7f1ee29255bab',
-    messagingSenderId: '644962621106',
-    projectId: 'users-4a5f7',
-    storageBucket: 'users-4a5f7.appspot.com',
+    apiKey: 'AIzaSyCQleD3qJgqwCFWDBb0U5dJPGB3WIR1uzw',
+    appId: '1:840885865156:ios:b9b3a134be692001965791',
+    messagingSenderId: '840885865156',
+    projectId: 'notas-86899',
+    storageBucket: 'notas-86899.appspot.com',
     iosBundleId: 'com.example.crud.RunnerTests',
   );
 }

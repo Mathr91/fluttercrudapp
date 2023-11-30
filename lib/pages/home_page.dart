@@ -12,12 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final FirestoreService firestoreService = FirestoreService();
   final TextEditingController textController = TextEditingController();
-  List<Color> noteColors = [
-    Colors.blue[200]!,
-    Colors.green[200]!,
-    Colors.red[200]!,
-    Colors.yellow[200]!,
-  ];
+  List<Color> noteColors = [Colors.green];
   int currentColorIndex = 0;
 
   void openNoteBox({String? docID}) {
@@ -35,8 +30,7 @@ class _HomePageState extends State<HomePage> {
                   textController.text,
                   noteColors[currentColorIndex],
                 );
-                currentColorIndex =
-                    (currentColorIndex + 1) % noteColors.length;
+                currentColorIndex = (currentColorIndex + 1) % noteColors.length;
               } else {
                 firestoreService.updateNote(docID, textController.text);
               }
@@ -44,7 +38,10 @@ class _HomePageState extends State<HomePage> {
               textController.clear();
               Navigator.pop(context);
             },
-            child: const Text('Add'),
+            child: const Text('Agregar'),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.green[700],
+            ),
           ),
         ],
       ),
@@ -54,10 +51,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Notes")),
+      appBar: AppBar(title: const Text("Mis notas")),
+      backgroundColor: Colors.green[700],
       floatingActionButton: FloatingActionButton(
         onPressed: openNoteBox,
         child: const Icon(Icons.add),
+        backgroundColor: Colors.green[700],
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: firestoreService.getNotesStream(),
@@ -98,11 +97,14 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             IconButton(
                               onPressed: () => openNoteBox(docID: docID),
-                              icon: const Icon(Icons.settings),
+                              icon: const Icon(Icons.build),
+                              color: Colors.black,
                             ),
                             IconButton(
-                              onPressed: () => firestoreService.deleteNote(docID),
-                              icon: const Icon(Icons.delete),
+                              onPressed: () =>
+                                  firestoreService.deleteNote(docID),
+                              icon: const Icon(Icons.delete_forever_sharp),
+                              color: Colors.red[700],
                             ),
                           ],
                         ),

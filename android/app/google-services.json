@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "644962621106",
-    "project_id": "users-4a5f7",
-    "storage_bucket": "users-4a5f7.appspot.com"
+    "project_number": "840885865156",
+    "project_id": "notas-86899",
+    "storage_bucket": "notas-86899.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:644962621106:android:97883bccfe71e317255bab",
+        "mobilesdk_app_id": "1:840885865156:android:040638c83a20e886965791",
         "android_client_info": {
           "package_name": "com.example.crud"
         }
@@ -15,45 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC58VbR9eqH6P3CW5poHuNKCvRvjXG02qo"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:644962621106:android:5827c4265a26e30b255bab",
-        "android_client_info": {
-          "package_name": "com.example.crud_app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC58VbR9eqH6P3CW5poHuNKCvRvjXG02qo"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:644962621106:android:fdeb2f3a096c91ba255bab",
-        "android_client_info": {
-          "package_name": "com.example.test_02"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC58VbR9eqH6P3CW5poHuNKCvRvjXG02qo"
+          "current_key": "AIzaSyDoD1-kfmO2sfWe4h8PkC1_-POi_9lK9C8"
         }
       ],
       "services": {
